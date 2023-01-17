@@ -1,9 +1,9 @@
-package com.bitacademy.guestbook.vo;
+package com.douzone.guestbook.vo;
 
 public class GuestbookVo {
 	private Long no;
 	private String name;
-	private String contents;
+	private String message;
 	private String password;
 	private String regDate;
 	public Long getNo() {
@@ -18,11 +18,11 @@ public class GuestbookVo {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getContents() {
-		return contents;
+	public String getMessage() {
+		return message;
 	}
-	public void setContents(String contents) {
-		this.contents = contents;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 	public String getPassword() {
 		return password;
@@ -38,7 +38,7 @@ public class GuestbookVo {
 	}
 	@Override
 	public String toString() {
-		return "GuestbookVo [no=" + no + ", name=" + name + ", contents=" + contents + ", password=" + password
+		return "GuestbookVo [no=" + no + ", name=" + name + ", message=" + message + ", password=" + password
 				+ ", regDate=" + regDate + "]";
 	}	
 }
